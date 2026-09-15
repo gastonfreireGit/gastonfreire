@@ -1,217 +1,225 @@
 const translations = {
   en: {
-    "nav.about": "About",
-    "nav.experience": "Experience",
-    "nav.projects": "Projects",
-    "nav.certifications": "Certifications",
-    "nav.contact": "Contact",
-
-    "hero.available": "Cloud • DevOps • Infrastructure",
-    "hero.greeting": "Hi, I'm",
-    "hero.lead": "I build, automate and improve cloud infrastructure with a strong focus on AWS, Infrastructure as Code, Kubernetes and reliable operations.",
-    "hero.viewProjects": "View projects",
-    "hero.focus": "Focus",
-    "hero.location": "Based in",
-
-    "about.kicker": "About",
-    "about.title": "Infrastructure with purpose.",
-    "about.p1": "I enjoy turning complex infrastructure problems into simpler, repeatable and well-documented solutions.",
-    "about.p2": "My work is centered around cloud infrastructure, automation and platform reliability. I like combining hands-on engineering with clear architecture, reproducible deployments and practical operational improvements.",
-    "about.card1Title": "Repeatable",
-    "about.card1Text": "Infrastructure should be versioned, reviewable and easy to reproduce.",
-    "about.card2Title": "Observable",
-    "about.card2Text": "Good systems make their state, risks and failures visible.",
-    "about.card3Title": "Practical",
-    "about.card3Text": "The best solution is the one teams can actually operate and improve.",
-
-    "experience.kicker": "Experience",
-    "experience.title": "What I work on.",
-    "experience.cloudTitle": "Cloud Architecture & AWS",
-    "experience.cloudText": "Designing and operating AWS environments with networking, compute, storage, security, observability and cost-awareness in mind.",
-    "experience.iacTitle": "Infrastructure as Code",
-    "experience.iacText": "Building modular, reusable infrastructure and deployment workflows with Terraform, Terragrunt and Git-based review processes.",
-    "experience.platformTitle": "Containers & Platforms",
-    "experience.platformText": "Deploying and troubleshooting containerized workloads with Kubernetes, Helm, Docker and AWS container services.",
-    "experience.automationTitle": "Automation & Operations",
-    "experience.automationText": "Creating scripts and tooling that reduce repetitive work, improve visibility and make day-to-day operations safer.",
-
-    "projects.kicker": "Selected projects",
-    "projects.title": "Things I've built and improved.",
-    "projects.migrationLabel": "Cloud Migration",
-    "projects.migrationTitle": "AWS Migration & Modernization",
-    "projects.migrationText": "Migration-focused infrastructure patterns for moving workloads from on-premises environments to AWS with repeatability, security and operational readiness.",
-    "projects.iacLabel": "Infrastructure as Code",
-    "projects.iacTitle": "Reusable AWS Infrastructure",
-    "projects.iacText": "Reusable Terraform components and environment patterns for networking, compute, IAM, automation and multi-environment deployments.",
-    "projects.ecsLabel": "Containers",
-    "projects.ecsTitle": "ECS Application Architecture",
-    "projects.ecsText": "AWS ECS architecture with services distributed across public and private networks, ALB ingress, ECR images and tightly scoped security-group communication.",
-    "projects.networkLabel": "Networking & Visibility",
-    "projects.networkTitle": "AWS Network Traffic Visualizer",
-    "projects.networkText": "Python tooling to inspect ENIs and VPC Flow Logs and transform network activity into a visual relationship map of IPs, ports and AWS interfaces.",
-    "projects.k8sLabel": "Platform Engineering",
-    "projects.k8sTitle": "Kubernetes Application Stack",
-    "projects.k8sText": "Containerized application environments with frontend, backend and data services, packaged and deployed with Kubernetes and Helm.",
-    "projects.automationLabel": "Automation",
-    "projects.automationTitle": "AWS Operations Tooling",
-    "projects.automationText": "Python and serverless automation for AWS operations, resource management, scheduling and infrastructure visibility.",
-    "projects.note": "Next step: each project can become its own case-study page with architecture diagrams, screenshots, decisions and lessons learned.",
-
-    "certifications.kicker": "Certifications",
-    "certifications.title": "Continuous learning.",
-    "certifications.claudeText": "Foundations in effective, responsible and practical use of Claude and AI-assisted workflows.",
-    "certifications.more": "Add AWS and other certifications here.",
-
-    "contact.kicker": "Contact",
-    "contact.title": "Let's build something useful.",
-    "contact.text": "If you'd like to talk about cloud infrastructure, DevOps, automation or a technical project, LinkedIn is the best place to reach me for now.",
-    "contact.linkedin": "Open LinkedIn",
-    "contact.backTop": "Back to top"
+    "nav.about":"About","nav.journey":"Journey","nav.cases":"Case studies","nav.certifications":"Certifications","nav.skills":"Skills","nav.contact":"Contact",
+    "hero.eyebrow":"AWS • Cloud Architecture • Infrastructure","hero.greeting":"Hi, I'm","hero.lead":"I design and improve cloud infrastructure with a strong focus on AWS architecture, migrations, Infrastructure as Code and automation.","hero.cases":"Explore case studies","hero.focus":"Focus","hero.location":"Based in",
+    "hero.architectureLabel":"Architecture mindset","hero.architectureTitle":"From requirement to reliable infrastructure.","hero.arch1":"Understand","hero.arch1Sub":"Business & constraints","hero.arch2":"Design","hero.arch2Sub":"Trade-offs & patterns","hero.arch3":"Automate","hero.arch3Sub":"IaC & repeatability","hero.arch4":"Operate","hero.arch4Sub":"Observe & improve",
+    "about.kicker":"About","about.title":"Cloud engineering beyond the service list.","about.p1":"I enjoy understanding why a system behaves the way it does, then turning that understanding into architecture, automation and operational improvements.","about.p2":"My work is centered on AWS infrastructure, migrations, networking and Infrastructure as Code. I care about making technical decisions understandable, repeatable and useful for the people who operate the system.","about.ownershipTitle":"Ownership","about.ownershipText":"Understand the problem end-to-end and take responsibility for moving it forward.","about.clarityTitle":"Clarity","about.clarityText":"Good architecture is easier to operate when decisions and trade-offs are explicit.","about.improveTitle":"Continuous improvement","about.improveText":"Automate what repeats, document what matters and keep refining the system.",
+    "journey.kicker":"Career journey","journey.title":"What each stage taught me.","journey.intro":"More than job titles: technical growth, professional growth and the way each experience shaped how I work.",
+    "cases.kicker":"AWS architecture & case studies","cases.title":"Problems, decisions and outcomes.","cases.intro":"Generic project names, real architecture patterns. The goal is to explain the problem, the decision and the result without exposing client information.",
+    "certs.kicker":"Certifications","certs.title":"Structured learning, applied in practice.","certs.intro":"This section is prepared to mirror the complete certification list from LinkedIn.",
+    "skills.kicker":"Skills","skills.title":"Primary focus first.","skills.intro":"Technologies grouped by how they fit into my work instead of a flat list.",
+    "education.kicker":"Education","education.title":"Technical foundations.","dyn.principles":"Professional principles","dyn.location":"Location","contact.kicker":"Contact","contact.title":"Let's talk cloud, architecture and infrastructure.","contact.text":"LinkedIn is the easiest way to reach me. You can also explore the code behind this site on GitHub.",
+    "dyn.technical":"Technical growth","dyn.values":"Professional growth","dyn.challenge":"Challenge","dyn.decision":"Decision","dyn.solution":"Solution","dyn.outcome":"Outcome","dyn.architecture":"Architecture","dyn.credential":"View credential","dyn.pending":"More LinkedIn certifications will be added here."
   },
-
   es: {
-    "nav.about": "Sobre mí",
-    "nav.experience": "Experiencia",
-    "nav.projects": "Proyectos",
-    "nav.certifications": "Certificaciones",
-    "nav.contact": "Contacto",
-
-    "hero.available": "Cloud • DevOps • Infraestructura",
-    "hero.greeting": "Hola, soy",
-    "hero.lead": "Diseño, automatizo y mejoro infraestructura cloud con foco en AWS, Infrastructure as Code, Kubernetes y operaciones confiables.",
-    "hero.viewProjects": "Ver proyectos",
-    "hero.focus": "Especialidad",
-    "hero.location": "Ubicación",
-
-    "about.kicker": "Sobre mí",
-    "about.title": "Infraestructura con propósito.",
-    "about.p1": "Me gusta transformar problemas complejos de infraestructura en soluciones más simples, repetibles y bien documentadas.",
-    "about.p2": "Mi trabajo se centra en infraestructura cloud, automatización y confiabilidad de plataformas. Me gusta combinar ingeniería práctica con arquitectura clara, despliegues reproducibles y mejoras operativas concretas.",
-    "about.card1Title": "Repetible",
-    "about.card1Text": "La infraestructura debería estar versionada, ser revisable y fácil de reproducir.",
-    "about.card2Title": "Observable",
-    "about.card2Text": "Los buenos sistemas hacen visibles su estado, sus riesgos y sus fallas.",
-    "about.card3Title": "Práctico",
-    "about.card3Text": "La mejor solución es la que el equipo realmente puede operar y mejorar.",
-
-    "experience.kicker": "Experiencia",
-    "experience.title": "En qué trabajo.",
-    "experience.cloudTitle": "Arquitectura Cloud & AWS",
-    "experience.cloudText": "Diseño y operación de entornos AWS considerando networking, cómputo, storage, seguridad, observabilidad y costos.",
-    "experience.iacTitle": "Infrastructure as Code",
-    "experience.iacText": "Infraestructura modular y reutilizable con Terraform, Terragrunt y procesos de revisión basados en Git.",
-    "experience.platformTitle": "Contenedores & Plataformas",
-    "experience.platformText": "Despliegue y troubleshooting de workloads contenerizados con Kubernetes, Helm, Docker y servicios de contenedores de AWS.",
-    "experience.automationTitle": "Automatización & Operaciones",
-    "experience.automationText": "Scripts y herramientas para reducir tareas repetitivas, mejorar la visibilidad y hacer más seguras las operaciones del día a día.",
-
-    "projects.kicker": "Proyectos seleccionados",
-    "projects.title": "Cosas que construí y mejoré.",
-    "projects.migrationLabel": "Migración Cloud",
-    "projects.migrationTitle": "Migración & Modernización en AWS",
-    "projects.migrationText": "Patrones de infraestructura orientados a migraciones desde entornos on-premises hacia AWS, priorizando repetibilidad, seguridad y preparación operativa.",
-    "projects.iacLabel": "Infrastructure as Code",
-    "projects.iacTitle": "Infraestructura AWS reutilizable",
-    "projects.iacText": "Componentes Terraform y patrones por ambiente para networking, cómputo, IAM, automatización y despliegues multi-entorno.",
-    "projects.ecsLabel": "Contenedores",
-    "projects.ecsTitle": "Arquitectura de Aplicaciones en ECS",
-    "projects.ecsText": "Arquitectura AWS ECS con servicios distribuidos entre redes públicas y privadas, ingreso mediante ALB, imágenes en ECR y comunicación restringida mediante security groups.",
-    "projects.networkLabel": "Networking & Visibilidad",
-    "projects.networkTitle": "Visualizador de Tráfico de Red en AWS",
-    "projects.networkText": "Herramienta en Python para analizar ENIs y VPC Flow Logs y transformar la actividad de red en un mapa visual de relaciones entre IPs, puertos e interfaces AWS.",
-    "projects.k8sLabel": "Platform Engineering",
-    "projects.k8sTitle": "Stack de aplicaciones en Kubernetes",
-    "projects.k8sText": "Entornos contenerizados con frontend, backend y servicios de datos, empaquetados y desplegados con Kubernetes y Helm.",
-    "projects.automationLabel": "Automatización",
-    "projects.automationTitle": "Herramientas operativas para AWS",
-    "projects.automationText": "Automatización con Python y servicios serverless para operaciones AWS, gestión de recursos, scheduling y visibilidad de infraestructura.",
-    "projects.note": "Próximo paso: convertir cada proyecto en un caso de estudio con diagramas de arquitectura, screenshots, decisiones y aprendizajes.",
-
-    "certifications.kicker": "Certificaciones",
-    "certifications.title": "Aprendizaje continuo.",
-    "certifications.claudeText": "Fundamentos para el uso efectivo, responsable y práctico de Claude y workflows asistidos por IA.",
-    "certifications.more": "Agregar aquí certificaciones de AWS y otras tecnologías.",
-
-    "contact.kicker": "Contacto",
-    "contact.title": "Construyamos algo útil.",
-    "contact.text": "Si querés hablar sobre infraestructura cloud, DevOps, automatización o algún proyecto técnico, por ahora LinkedIn es la mejor forma de contactarme.",
-    "contact.linkedin": "Abrir LinkedIn",
-    "contact.backTop": "Volver arriba"
+    "nav.about":"Sobre mí","nav.journey":"Trayectoria","nav.cases":"Casos de estudio","nav.certifications":"Certificaciones","nav.skills":"Skills","nav.contact":"Contacto",
+    "hero.eyebrow":"AWS • Arquitectura Cloud • Infraestructura","hero.greeting":"Hola, soy","hero.lead":"Diseño y mejoro infraestructura cloud con foco en arquitectura AWS, migraciones, Infrastructure as Code y automatización.","hero.cases":"Ver casos de estudio","hero.focus":"Foco","hero.location":"Ubicación",
+    "hero.architectureLabel":"Mentalidad de arquitectura","hero.architectureTitle":"Del requerimiento a una infraestructura confiable.","hero.arch1":"Entender","hero.arch1Sub":"Negocio y restricciones","hero.arch2":"Diseñar","hero.arch2Sub":"Trade-offs y patrones","hero.arch3":"Automatizar","hero.arch3Sub":"IaC y repetibilidad","hero.arch4":"Operar","hero.arch4Sub":"Observar y mejorar",
+    "about.kicker":"Sobre mí","about.title":"Ingeniería cloud más allá de la lista de servicios.","about.p1":"Me gusta entender por qué un sistema se comporta como lo hace y convertir ese entendimiento en arquitectura, automatización y mejoras operativas.","about.p2":"Mi trabajo se centra en infraestructura AWS, migraciones, networking e Infrastructure as Code. Me importa que las decisiones técnicas sean entendibles, repetibles y útiles para quienes van a operar el sistema.","about.ownershipTitle":"Ownership","about.ownershipText":"Entender el problema de punta a punta y asumir responsabilidad para llevarlo adelante.","about.clarityTitle":"Claridad","about.clarityText":"La arquitectura es más fácil de operar cuando las decisiones y trade-offs son explícitos.","about.improveTitle":"Mejora continua","about.improveText":"Automatizar lo repetitivo, documentar lo importante y seguir refinando el sistema.",
+    "journey.kicker":"Trayectoria profesional","journey.title":"Qué me enseñó cada etapa.","journey.intro":"Más que cargos: crecimiento técnico, crecimiento profesional y cómo cada experiencia moldeó mi forma de trabajar.",
+    "cases.kicker":"Arquitectura AWS & casos de estudio","cases.title":"Problemas, decisiones y resultados.","cases.intro":"Nombres genéricos, patrones reales. La idea es explicar el problema, la decisión y el resultado sin exponer información de clientes.",
+    "certs.kicker":"Certificaciones","certs.title":"Aprendizaje estructurado, aplicado en la práctica.","certs.intro":"Esta sección está preparada para reflejar la lista completa de certificaciones de LinkedIn.",
+    "skills.kicker":"Skills","skills.title":"Primero, el foco principal.","skills.intro":"Tecnologías agrupadas según cómo encajan en mi trabajo, en vez de una lista plana.",
+    "education.kicker":"Educación","education.title":"Bases técnicas.","dyn.principles":"Principios profesionales","dyn.location":"Ubicación","contact.kicker":"Contacto","contact.title":"Hablemos de cloud, arquitectura e infraestructura.","contact.text":"LinkedIn es la forma más simple de contactarme. También podés ver el código de este sitio en GitHub.",
+    "dyn.technical":"Crecimiento técnico","dyn.values":"Crecimiento profesional","dyn.challenge":"Desafío","dyn.decision":"Decisión","dyn.solution":"Solución","dyn.outcome":"Resultado","dyn.architecture":"Arquitectura","dyn.credential":"Ver credencial","dyn.pending":"Próximamente se agregarán más certificaciones de LinkedIn."
   }
 };
 
 const root = document.documentElement;
-const themeToggle = document.getElementById("themeToggle");
-const languageToggle = document.getElementById("languageToggle");
-const menuButton = document.getElementById("menuButton");
-const mobileNav = document.getElementById("mobileNav");
-const header = document.querySelector(".site-header");
-
-const savedTheme = localStorage.getItem("theme");
-const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
-root.dataset.theme = savedTheme || (systemPrefersLight ? "light" : "dark");
-
 let currentLanguage = localStorage.getItem("language") || "en";
 
-function applyLanguage(language) {
-  currentLanguage = language;
-  root.lang = language;
-  languageToggle.textContent = language === "en" ? "ES" : "EN";
-
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const key = element.dataset.i18n;
-    const translated = translations[language]?.[key];
-
-    if (translated) {
-      element.textContent = translated;
-    }
-  });
-
-  localStorage.setItem("language", language);
+function t(key) {
+  return translations[currentLanguage][key] || key;
 }
 
-applyLanguage(currentLanguage);
+function applyLanguage(lang) {
+  currentLanguage = lang;
+  root.lang = lang;
+  document.getElementById("languageToggle").textContent = lang === "en" ? "ES" : "EN";
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.dataset.i18n;
+    if (translations[lang][key]) el.textContent = translations[lang][key];
+  });
+  localStorage.setItem("language", lang);
+  renderDynamicContent();
+}
 
-themeToggle.addEventListener("click", () => {
-  const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
-  root.dataset.theme = nextTheme;
-  localStorage.setItem("theme", nextTheme);
+function renderCareer() {
+  const principlesTarget = document.getElementById("professionalPrinciples");
+  const principles = portfolioContent[currentLanguage].professionalPrinciples;
+  principlesTarget.innerHTML = `
+    <span class="profile-values-label">${t("dyn.principles")}</span>
+    <div class="profile-values-list">${principles.map(x => `<span>${x}</span>`).join("")}</div>
+  `;
+
+  const target = document.getElementById("careerTimeline");
+  const items = portfolioContent[currentLanguage].career;
+
+  target.innerHTML = items.map((job, index) => `
+    <article class="career-card reveal visible">
+      <div class="career-rail">
+        <span class="career-dot"></span>
+        <span class="career-line"></span>
+      </div>
+      <div class="career-main">
+        <div class="career-head">
+          <div>
+            <h3>${job.company}</h3>
+            ${job.location ? `<p class="career-location">${job.location}</p>` : ""}
+          </div>
+          <span class="career-index">${String(index + 1).padStart(2, "0")}</span>
+        </div>
+
+        <div class="career-roles">
+          ${job.roles.map(role => `
+            <div class="career-role-row">
+              <strong>${role.role}</strong>
+              <span>${role.period}</span>
+            </div>
+          `).join("")}
+        </div>
+
+        <p class="career-summary">${job.summary}</p>
+
+        <div class="learning-grid">
+          <div class="learning-card">
+            <h4>${t("dyn.technical")}</h4>
+            <ul>${job.technical.map(x => `<li>${x}</li>`).join("")}</ul>
+          </div>
+          <div class="learning-card">
+            <h4>${t("dyn.values")}</h4>
+            <ul>${job.professional.map(x => `<li>${x}</li>`).join("")}</ul>
+          </div>
+        </div>
+      </div>
+    </article>
+  `).join("");
+}
+
+function renderDiagram(nodes) {
+  return `<div class="mini-diagram">
+    ${nodes.map((node, i) => `
+      <div class="diagram-node">${node}</div>
+      ${i < nodes.length - 1 ? `<span class="diagram-arrow">→</span>` : ""}
+    `).join("")}
+  </div>`;
+}
+
+function renderCases() {
+  const target = document.getElementById("caseStudies");
+  const items = portfolioContent[currentLanguage].cases;
+
+  target.innerHTML = items.map(item => `
+    <article class="case-card ${item.featured ? "case-featured" : ""} reveal visible">
+      <div class="case-top">
+        <span class="case-category">${item.category}</span>
+        <span class="case-arrow">↗</span>
+      </div>
+      <h3>${item.title}</h3>
+
+      <div class="case-details">
+        <div><span>${t("dyn.challenge")}</span><p>${item.challenge}</p></div>
+        <div><span>${t("dyn.decision")}</span><p>${item.decision}</p></div>
+        <div><span>${t("dyn.solution")}</span><p>${item.solution}</p></div>
+        <div><span>${t("dyn.outcome")}</span><p>${item.outcome}</p></div>
+      </div>
+
+      <div class="case-architecture">
+        <span>${t("dyn.architecture")}</span>
+        ${renderDiagram(item.diagram)}
+      </div>
+
+      <div class="tag-list">${item.services.map(x => `<span>${x}</span>`).join("")}</div>
+    </article>
+  `).join("");
+}
+
+function renderCertifications() {
+  const target = document.getElementById("certificationGrid");
+  const items = portfolioContent[currentLanguage].certifications;
+
+  target.innerHTML = items.map(item => `
+    <article class="cert-card reveal visible">
+      <div class="cert-badge">${item.badge}</div>
+      <div>
+        ${item.issuer ? `<span class="cert-issuer">${item.issuer}</span>` : ""}
+        <h3>${item.name}</h3>
+        ${item.year ? `<p>${item.year}</p>` : ""}
+        ${item.url ? `<a href="${item.url}" target="_blank" rel="noopener noreferrer">${t("dyn.credential")} ↗</a>` : ""}
+      </div>
+    </article>
+  `).join("");
+}
+
+function renderEducation() {
+  const target = document.getElementById("educationGrid");
+  const items = portfolioContent[currentLanguage].education;
+
+  target.innerHTML = items.map(item => `
+    <article class="education-card reveal visible">
+      <span class="education-period">${item.period}</span>
+      <h3>${item.institution}</h3>
+      <p>${item.program}</p>
+    </article>
+  `).join("");
+}
+
+function renderSkills() {
+  const target = document.getElementById("skillsGrid");
+  const groups = portfolioContent[currentLanguage].skills;
+
+  target.innerHTML = groups.map(group => `
+    <article class="skill-card reveal visible">
+      <span class="skill-level">${group.level}</span>
+      <h3>${group.title}</h3>
+      <div class="tag-list">${group.items.map(x => `<span>${x}</span>`).join("")}</div>
+    </article>
+  `).join("");
+}
+
+function renderDynamicContent() {
+  renderCareer();
+  renderCases();
+  renderCertifications();
+  renderEducation();
+  renderSkills();
+}
+
+const savedTheme = localStorage.getItem("theme");
+const systemLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+root.dataset.theme = savedTheme || (systemLight ? "light" : "dark");
+
+document.getElementById("themeToggle").addEventListener("click", () => {
+  const next = root.dataset.theme === "dark" ? "light" : "dark";
+  root.dataset.theme = next;
+  localStorage.setItem("theme", next);
 });
 
-languageToggle.addEventListener("click", () => {
+document.getElementById("languageToggle").addEventListener("click", () => {
   applyLanguage(currentLanguage === "en" ? "es" : "en");
 });
 
-menuButton.addEventListener("click", () => {
-  const isOpen = mobileNav.classList.toggle("open");
-  menuButton.setAttribute("aria-expanded", String(isOpen));
+const mobileNav = document.getElementById("mobileNav");
+document.getElementById("menuButton").addEventListener("click", () => {
+  mobileNav.classList.toggle("open");
 });
-
-mobileNav.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    mobileNav.classList.remove("open");
-    menuButton.setAttribute("aria-expanded", "false");
-  });
-});
+mobileNav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => mobileNav.classList.remove("open")));
 
 window.addEventListener("scroll", () => {
-  header.classList.toggle("scrolled", window.scrollY > 8);
+  document.getElementById("siteHeader").classList.toggle("scrolled", window.scrollY > 8);
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.12
-  }
-);
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
 
-document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+applyLanguage(currentLanguage);
