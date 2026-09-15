@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gastón Freire — Cloud, DevOps, AWS, Terraform, Kubernetes and automation portfolio." />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Gastón Freire | Cloud & DevOps</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page-glow page-glow-1"></div>
+  <div class="page-glow page-glow-2"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Gastón Freire home">
+        <span class="brand-mark">GF</span>
+        <span class="brand-text">gastonfreire.com.ar</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#certifications" data-i18n="nav.certifications">Certifications</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button text-button" id="languageToggle" type="button" aria-label="Change language">
+          ES
+        </button>
+
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="menu-button" id="menuButton" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#experience" data-i18n="nav.experience">Experience</a>
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#certifications" data-i18n="nav.certifications">Certifications</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            <span data-i18n="hero.available">Cloud • DevOps • Infrastructure</span>
+          </div>
+
+          <h1>
+            <span data-i18n="hero.greeting">Hi, I'm</span>
+            <span class="gradient-text">Gastón Freire.</span>
+          </h1>
+
+          <p class="hero-lead" data-i18n="hero.lead">
+            I build, automate and improve cloud infrastructure with a strong focus on AWS,
+            Infrastructure as Code, Kubernetes and reliable operations.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              <span data-i18n="hero.viewProjects">View projects</span>
+              <span aria-hidden="true">↘</span>
+            </a>
+
+            <a class="button button-secondary"
+               href="https://www.linkedin.com/in/gaston-alejandro-freire/"
+               target="_blank"
+               rel="noopener noreferrer">
+              LinkedIn
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <div>
+              <span class="meta-label" data-i18n="hero.focus">Focus</span>
+              <strong>AWS · Terraform · Kubernetes · Python</strong>
+            </div>
+            <div>
+              <span class="meta-label" data-i18n="hero.location">Based in</span>
+              <strong>Mendoza, Argentina</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="terminal-card">
+            <div class="terminal-top">
+              <div class="terminal-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="terminal-title">portfolio.sh</span>
+            </div>
+
+            <div class="terminal-body">
+              <p><span class="terminal-prompt">$</span> whoami</p>
+              <p class="terminal-output">gaston-freire</p>
+
+              <p><span class="terminal-prompt">$</span> cat focus.txt</p>
+              <p class="terminal-output">aws terraform kubernetes python</p>
+
+              <p><span class="terminal-prompt">$</span> terraform plan</p>
+              <p class="terminal-success">Plan: build better infrastructure.</p>
+
+              <p><span class="terminal-prompt">$</span> kubectl get goals</p>
+              <div class="terminal-table">
+                <span>NAME</span><span>STATUS</span>
+                <span>learn</span><span class="terminal-success">Running</span>
+                <span>build</span><span class="terminal-success">Running</span>
+                <span>improve</span><span class="terminal-success">Running</span>
+              </div>
+
+              <p class="terminal-cursor-line">
+                <span class="terminal-prompt">$</span>
+                <span class="terminal-cursor"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tech-strip" aria-label="Technology stack">
+      <div class="container tech-list">
+        <span>AWS</span>
+        <span>Terraform</span>
+        <span>Terragrunt</span>
+        <span>Kubernetes</span>
+        <span>Helm</span>
+        <span>Python</span>
+        <span>Docker</span>
+        <span>Git</span>
+        <span>Linux</span>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container section-grid">
+        <div class="section-heading reveal">
+          <span class="section-number">01</span>
+          <div>
+            <p class="section-kicker" data-i18n="about.kicker">About</p>
+            <h2 data-i18n="about.title">Infrastructure with purpose.</h2>
+          </div>
+        </div>
+
+        <div class="section-content reveal">
+          <p class="large-copy" data-i18n="about.p1">
+            I enjoy turning complex infrastructure problems into simpler, repeatable and
+            well-documented solutions.
+          </p>
+
+          <p data-i18n="about.p2">
+            My work is centered around cloud infrastructure, automation and platform reliability.
+            I like combining hands-on engineering with clear architecture, reproducible deployments
+            and practical operational improvements.
+          </p>
+
+          <div class="principles-grid">
+            <article class="mini-card">
+              <span class="mini-card-icon">IaC</span>
+              <h3 data-i18n="about.card1Title">Repeatable</h3>
+              <p data-i18n="about.card1Text">Infrastructure should be versioned, reviewable and easy to reproduce.</p>
+            </article>
+
+            <article class="mini-card">
+              <span class="mini-card-icon">Ops</span>
+              <h3 data-i18n="about.card2Title">Observable</h3>
+              <p data-i18n="about.card2Text">Good systems make their state, risks and failures visible.</p>
+            </article>
+
+            <article class="mini-card">
+              <span class="mini-card-icon">DX</span>
+              <h3 data-i18n="about.card3Title">Practical</h3>
+              <p data-i18n="about.card3Text">The best solution is the one teams can actually operate and improve.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-number">02</span>
+          <div>
+            <p class="section-kicker" data-i18n="experience.kicker">Experience</p>
+            <h2 data-i18n="experience.title">What I work on.</h2>
+          </div>
+        </div>
+
+        <div class="experience-list">
+          <article class="experience-item reveal">
+            <div class="experience-index">01</div>
+            <div>
+              <h3 data-i18n="experience.cloudTitle">Cloud Architecture & AWS</h3>
+              <p data-i18n="experience.cloudText">
+                Designing and operating AWS environments with networking, compute, storage,
+                security, observability and cost-awareness in mind.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span>AWS</span><span>VPC</span><span>EC2</span><span>ECS</span><span>Lambda</span>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <div class="experience-index">02</div>
+            <div>
+              <h3 data-i18n="experience.iacTitle">Infrastructure as Code</h3>
+              <p data-i18n="experience.iacText">
+                Building modular, reusable infrastructure and deployment workflows with Terraform,
+                Terragrunt and Git-based review processes.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span>Terraform</span><span>Terragrunt</span><span>Git</span><span>CI/CD</span>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <div class="experience-index">03</div>
+            <div>
+              <h3 data-i18n="experience.platformTitle">Containers & Platforms</h3>
+              <p data-i18n="experience.platformText">
+                Deploying and troubleshooting containerized workloads with Kubernetes, Helm,
+                Docker and AWS container services.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span>Kubernetes</span><span>Helm</span><span>Docker</span><span>EKS</span>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <div class="experience-index">04</div>
+            <div>
+              <h3 data-i18n="experience.automationTitle">Automation & Operations</h3>
+              <p data-i18n="experience.automationText">
+                Creating scripts and tooling that reduce repetitive work, improve visibility
+                and make day-to-day operations safer.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span>Python</span><span>Boto3</span><span>Shell</span><span>APIs</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-number">03</span>
+          <div>
+            <p class="section-kicker" data-i18n="projects.kicker">Selected projects</p>
+            <h2 data-i18n="projects.title">Things I've built and improved.</h2>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-card-featured reveal">
+            <div class="project-top">
+              <span class="project-label" data-i18n="projects.migrationLabel">Cloud Migration</span>
+              <span class="project-arrow">↗</span>
+            </div>
+            <h3 data-i18n="projects.migrationTitle">Enterprise Workload Migration to AWS</h3>
+            <p data-i18n="projects.migrationText">
+              Infrastructure and migration patterns for moving Windows and Linux workloads from
+              on-premises environments to AWS, including networking, EC2, storage, security,
+              cutover planning and repeatable migration workflows.
+            </p>
+            <div class="tag-list">
+              <span>AWS</span><span>MGN</span><span>EC2</span><span>VPC</span><span>EBS</span><span>Terraform</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-label" data-i18n="projects.iacLabel">Infrastructure as Code</span>
+              <span class="project-arrow">↗</span>
+            </div>
+            <h3 data-i18n="projects.iacTitle">Multi-Environment Terraform Platform</h3>
+            <p data-i18n="projects.iacText">
+              Terraform and Terragrunt structure for dev, QA and production environments,
+              with reusable modules, Git workflows and infrastructure changes reviewed through pull requests.
+            </p>
+            <div class="tag-list">
+              <span>Terraform</span><span>Terragrunt</span><span>AWS</span><span>Azure DevOps</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-label" data-i18n="projects.ecsLabel">Containers</span>
+              <span class="project-arrow">↗</span>
+            </div>
+            <h3 data-i18n="projects.ecsTitle">ECS Application Architecture</h3>
+            <p data-i18n="projects.ecsText">
+              AWS ECS architecture with services distributed across public and private networks,
+              ALB ingress, ECR images and tightly scoped security-group communication.
+            </p>
+            <div class="tag-list">
+              <span>ECS</span><span>EC2</span><span>ALB</span><span>ECR</span><span>VPC</span><span>CDK</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-label" data-i18n="projects.k8sLabel">Platform Engineering</span>
+              <span class="project-arrow">↗</span>
+            </div>
+            <h3 data-i18n="projects.k8sTitle">Kubernetes & Helm Application Stack</h3>
+            <p data-i18n="projects.k8sText">
+              Local and cloud-native application environments with frontend, backend and database
+              services, packaged with Helm and deployed on Kubernetes.
+            </p>
+            <div class="tag-list">
+              <span>Kubernetes</span><span>Helm</span><span>Docker</span><span>PostgreSQL</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-label" data-i18n="projects.automationLabel">Automation</span>
+              <span class="project-arrow">↗</span>
+            </div>
+            <h3 data-i18n="projects.automationTitle">AWS Operations Automation</h3>
+            <p data-i18n="projects.automationText">
+              Python and serverless tooling for EC2 lifecycle management, scheduled operations,
+              S3-driven workflows and infrastructure data collection using Boto3.
+            </p>
+            <div class="tag-list">
+              <span>Python</span><span>Boto3</span><span>Lambda</span><span>EventBridge</span><span>S3</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-label" data-i18n="projects.networkLabel">Networking & Visibility</span>
+              <span class="project-arrow">↗</span>
+            </div>
+            <h3 data-i18n="projects.networkTitle">AWS Network Traffic Visualizer</h3>
+            <p data-i18n="projects.networkText">
+              Python tooling to inspect ENIs and VPC Flow Logs and transform network activity
+              into a visual relationship map of IPs, ports and AWS interfaces.
+            </p>
+            <div class="tag-list">
+              <span>Python</span><span>Boto3</span><span>VPC Flow Logs</span><span>ENI</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="projects-note reveal" data-i18n="projects.note">
+          These examples are intentionally anonymized. The next version can turn selected projects
+          into full case studies with architecture diagrams, challenges, decisions and outcomes.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="certifications">
+      <div class="container certification-layout">
+        <div class="section-heading reveal">
+          <span class="section-number">04</span>
+          <div>
+            <p class="section-kicker" data-i18n="certifications.kicker">Certifications</p>
+            <h2 data-i18n="certifications.title">Continuous learning.</h2>
+          </div>
+        </div>
+
+        <div class="certification-card reveal">
+          <div class="certification-icon">AI</div>
+          <div>
+            <span class="certification-provider">Anthropic</span>
+            <h3>Claude Certified Associate — Foundations</h3>
+            <p data-i18n="certifications.claudeText">
+              Foundations in effective, responsible and practical use of Claude and AI-assisted workflows.
+            </p>
+          </div>
+        </div>
+
+        <div class="certification-placeholder reveal">
+          <span>+</span>
+          <p data-i18n="certifications.more">Add AWS and other certifications here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card reveal">
+        <div>
+          <p class="section-kicker" data-i18n="contact.kicker">Contact</p>
+          <h2 data-i18n="contact.title">Let's build something useful.</h2>
+          <p data-i18n="contact.text">
+            If you'd like to talk about cloud infrastructure, DevOps, automation or a technical project,
+            LinkedIn is the best place to reach me for now.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="button button-primary"
+             href="https://www.linkedin.com/in/gaston-alejandro-freire/"
+             target="_blank"
+             rel="noopener noreferrer">
+            <span data-i18n="contact.linkedin">Open LinkedIn</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="button button-secondary" href="#top">
+            <span data-i18n="contact.backTop">Back to top</span>
+            <span aria-hidden="true">↑</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Gastón Freire</p>
+      <p class="footer-tech">AWS · IaC · Kubernetes · Automation</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
