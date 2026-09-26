@@ -1,511 +1,79 @@
 const portfolioContent = {
   en: {
-    professionalPrinciples: [
-      "Responsibility",
-      "Professionalism",
-      "Calm under pressure",
-      "Teamwork",
-      "Helping others overcome obstacles"
-    ],
     career: [
-      {
-        company: "Caylent",
-        location: "Mendoza, Argentina",
-        roles: [
-          { role: "Senior Cloud Engineer", period: "May 2026 — Present" },
-          { role: "Cloud Engineer", period: "Jun 2025 — Present" }
-        ],
-        summary: "Current stage of my career focused on cloud engineering. My LinkedIn profile lists AWS cloud migration, CDK and TypeScript among my main skills.",
-        technical: [
-          "AWS cloud migration",
-          "AWS CDK",
-          "TypeScript",
-          "Cloud engineering"
-        ],
-        professional: [
-          "Growing into a senior cloud engineering role",
-          "Responsibility and professionalism",
-          "Teamwork and collaboration"
-        ]
-      },
-      {
-        company: "Netrix Global",
-        location: "Argentina",
-        roles: [
-          { role: "Sr. Cloud Engineer", period: "Sep 2022 — Jun 2025" }
-        ],
-        summary: "Senior cloud engineering role. The exported LinkedIn profile does not include detailed responsibilities for this position.",
-        technical: [
-          "Cloud engineering"
-        ],
-        professional: [
-          "Senior-level cloud engineering experience",
-          "Further development of cloud-focused responsibilities"
-        ]
-      },
-      {
-        company: "3XM Group",
-        location: "Argentina",
-        roles: [
-          { role: "DevOps", period: "Jan 2022 — Sep 2022" }
-        ],
-        summary: "DevOps role. The exported LinkedIn profile does not include detailed responsibilities for this position.",
-        technical: [
-          "DevOps"
-        ],
-        professional: [
-          "Transition toward cloud and DevOps-focused work"
-        ]
-      },
-      {
-        company: "Accenture",
-        location: "Argentina",
-        roles: [
-          { role: "Tech Arch Delivery Sr Analyst", period: "Nov 2020 — Dec 2021" }
-        ],
-        summary: "AWS administration, deployment coordination, CI/CD, Windows administration, monitoring and team coordination.",
-        technical: [
-          "AWS: S3, ElastiCache, CloudFront, Route 53, Lambda and Secrets Manager",
-          "Azure DevOps CI/CD",
-          "Windows Server 2013 / 2016 administration",
-          "Datadog monitoring",
-          "ServiceNow"
-        ],
-        professional: [
-          "Plan, coordinate and execute application deployments",
-          "Team coordination",
-          "Operational monitoring and change execution"
-        ]
-      },
-      {
-        company: "EY",
-        location: "Argentina",
-        roles: [
-          { role: "SharePoint Infrastructure Systems Management & Support", period: "Dec 2018 — Mar 2020" }
-        ],
-        summary: "Infrastructure management and support for SharePoint environments with Windows Server and log troubleshooting.",
-        technical: [
-          "SharePoint infrastructure management and support",
-          "SharePoint patching",
-          "SharePoint Designer 2010 / 2013",
-          "InfoPath 2013",
-          "Windows Server 2012 / 2016",
-          "Splunk for log troubleshooting"
-        ],
-        professional: [
-          "Production infrastructure support",
-          "Patch and maintenance discipline",
-          "Troubleshooting using operational logs"
-        ]
-      },
-      {
-        company: "Softtek",
-        location: "Buenos Aires, Argentina",
-        roles: [
-          { role: "SharePoint Infrastructure / Developer", period: "Sep 2016 — Dec 2018" }
-        ],
-        summary: "A hybrid infrastructure and development role across SharePoint, Windows Server, SQL Server and Azure.",
-        technical: [
-          "SharePoint 2010 / 2013 / 2016 infrastructure analysis, implementation and administration",
-          "HTML, CSS, Bootstrap, AngularJS, jQuery and JavaScript",
-          "SharePoint Designer 2010 / 2013",
-          "SQL Server 2012 / 2016",
-          "Windows Server 2012 / 2016 administration and implementation",
-          "Azure tenant administration"
-        ],
-        professional: [
-          "Combining infrastructure and development perspectives",
-          "Implementation and administration across multiple technology layers"
-        ]
-      },
-      {
-        company: "Solnik S.A.",
-        location: "",
-        roles: [
-          { role: "Technical Support", period: "Jun 2015 — Aug 2016" }
-        ],
-        summary: "Hands-on technical support and infrastructure implementation.",
-        technical: [
-          "Active Directory user administration",
-          "Structured cabling",
-          "Kaspersky antivirus maintenance",
-          "Infrastructure implementation and support",
-          "Windows Server 2008 R2 / 2012",
-          "IP telephony"
-        ],
-        professional: [
-          "Hands-on infrastructure support",
-          "User and endpoint administration",
-          "Working across physical and server infrastructure"
-        ]
-      },
-      {
-        company: "Readymind IT",
-        location: "Buenos Aires, Argentina",
-        roles: [
-          { role: "Technical Support", period: "Oct 2013 — Feb 2015" }
-        ],
-        summary: "Early professional experience supporting infrastructure, hardware, software and client environments across multiple industries.",
-        technical: [
-          "Windows Server 2008 / 2012 support and infrastructure implementation",
-          "Structured cabling",
-          "Hardware and software support",
-          "IP telephony"
-        ],
-        professional: [
-          "Client support across different business environments",
-          "Problem solving in varied customer contexts",
-          "Building a strong infrastructure and support foundation"
-        ]
-      }
+      {company:"Caylent",logo:"https://caylent.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=caylent.com&sz=128",initials:"C",location:"Mendoza, Argentina",roles:[{role:"Senior Cloud Engineer",period:"May 2026 — Present"},{role:"Cloud Engineer",period:"Jun 2025 — May 2026"}],summary:"My current stage, focused on cloud migrations and infrastructure delivery in AWS environments.",technical:["GitHub-based CI/CD pipelines","AWS MGN migrations","EC2, Auto Scaling and Load Balancers","AWS Control Tower and Organizations","Windows Server, IIS and SQL Server workloads on EC2","Grafana monitoring and alerting"],professional:["Working inside large migration programs with clearly defined responsibilities","Adapting deployment pipelines to target architectures","Balancing migration execution, infrastructure and operations","Continued growth into a Senior Cloud Engineer role"]},
+      {company:"Netrix Global",logo:"https://www.netrixglobal.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=netrixglobal.com&sz=128",initials:"N",location:"Argentina",roles:[{role:"Sr. Cloud Engineer",period:"Sep 2022 — Jun 2025"}],summary:"A major cloud engineering stage, including AWS migrations, landing-zone services, CI/CD and infrastructure for data-oriented workloads.",technical:["AWS Control Tower, Organizations and IAM Identity Center","Lambda, DynamoDB, API Gateway and Load Balancers","EC2 workloads used by Power BI consumers","AWS MGN migration of ~80 Red Hat Linux servers","Alternative image → S3 → AMI migration path for unsupported workloads","CI/CD and some Kubernetes exposure"],professional:["Owning the infrastructure scope while collaborating with specialized data teams","Designing fallback approaches when the preferred migration tool was not supported","Working with external connectivity requirements and multiple integrations","Handling large batches of server migrations"]},
+      {company:"3XM Group",logo:"https://www.3xmgroup.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=3xmgroup.com&sz=128",initials:"3X",location:"Argentina",roles:[{role:"DevOps",period:"Jan 2022 — Sep 2022"}],summary:"A full DevOps and AWS role maintaining infrastructure for different customers and application architectures.",technical:["EC2 and ECS","Lambda","Elastic Load Balancing","CloudFront","Elastic Beanstalk","AWS infrastructure operations"],professional:["Working across multiple customers instead of one fixed platform","Adapting quickly to different architectures and operational needs","Strengthening the transition from enterprise infrastructure into cloud-native operations"]},
+      {company:"Accenture",logo:"https://www.accenture.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=accenture.com&sz=128",initials:"A",location:"Argentina",roles:[{role:"Tech Arch Delivery Sr Analyst",period:"Nov 2020 — Dec 2021"}],summary:"My first strong AWS stage, combining application support, cloud services, CI/CD, monitoring and team coordination.",technical:["AWS: S3, ElastiCache, CloudFront, Route 53, Lambda and Secrets Manager","Azure DevOps CI/CD","Migration of deployment pipelines from Octopus to Azure DevOps","Datadog monitoring","ServiceNow","Windows Server administration"],professional:["Coordinating a distributed team of three people across China and India","Planning and executing application deployments","Working across time zones and remote teams","Starting the transition from traditional infrastructure toward AWS"]},
+      {company:"EY",logo:"https://www.ey.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=ey.com&sz=128",initials:"EY",location:"Argentina",roles:[{role:"SharePoint Infrastructure Systems Management & Support",period:"Dec 2018 — Mar 2020"}],summary:"Enterprise support with a stronger infrastructure focus around SharePoint on-premises environments.",technical:["SharePoint infrastructure management and support","SharePoint patching","Windows Server 2012 / 2016","Splunk monitoring and log troubleshooting","ServiceNow","SharePoint Designer and InfoPath"],professional:["Operating enterprise environments with formal support processes","Improving troubleshooting through logs and monitoring","Developing stronger operational discipline"]},
+      {company:"Softtek",logo:"https://www.softtek.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=softtek.com&sz=128",initials:"S",location:"Buenos Aires, Argentina",roles:[{role:"SharePoint Infrastructure / Developer",period:"Sep 2016 — Dec 2018"}],summary:"A mixed infrastructure and frontend-development role centered around Microsoft SharePoint.",technical:["SharePoint 2010 / 2013 / 2016 infrastructure","HTML, CSS, JavaScript and AngularJS","Bootstrap and jQuery","SQL Server 2012 / 2016","Windows Server 2012 / 2016","Azure tenant administration"],professional:["Understanding applications from both infrastructure and frontend perspectives","Working across multiple technical layers instead of a single specialty","Building deeper enterprise-platform experience"]},
+      {company:"Solnik S.A.",logo:"https://www.solnik.com.ar/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=solnik.com.ar&sz=128",initials:"S",location:"Argentina",roles:[{role:"Technical Support / Server Administration",period:"Jun 2015 — Aug 2016"}],summary:"A hybrid role between first-level support and Windows server administration.",technical:["Active Directory administration","Office 365 migration work","SharePoint","Windows Server 2008 R2 / 2012","Structured cabling","IP telephony"],professional:["Moving from end-user support into server administration","Participating in organization-wide migration work","Taking more responsibility for core IT services"]},
+      {company:"Readymind IT",logo:"https://readymind.ms/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=readymind.ms&sz=128",initials:"R",location:"Buenos Aires, Argentina",roles:[{role:"Technical Support",period:"Oct 2013 — Feb 2015"}],summary:"My professional starting point: end-user support, physical infrastructure and Windows Server deployments for different customer environments.",technical:["Physical on-premises server configuration","Active Directory, DHCP and DNS","Exchange and IIS","File and print services","Windows Server 2008 / 2012","IP telephony","L1 hardware and software support"],professional:["Learning to troubleshoot from the user all the way to the server","Working directly with customers and different business environments","Building a hands-on infrastructure foundation","Learning responsibility through day-to-day operational support"]}
     ],
-
     cases: [
-      {
-        featured: true,
-        category: "Migration",
-        title: "Enterprise Workload Migration to AWS",
-        challenge: "Move production workloads from on-premises environments to AWS while reducing cutover risk and keeping the process repeatable.",
-        decision: "Separate discovery, replication or pre-seeding, infrastructure preparation, validation and final cutover into explicit stages.",
-        solution: "Combine AWS migration and data-transfer patterns with Terraform-managed infrastructure, validation checkpoints and controlled DNS cutover.",
-        outcome: "A clearer migration runbook, lower operational risk and a pattern that can improve from one migration to the next.",
-        services: ["AWS","EC2","MGN","S3","EBS","VPC","Terraform","Route 53"],
-        diagram: ["On-prem","Replication / Seed","AWS Landing","Validation","DNS Cutover"]
-      },
-      {
-        category: "Infrastructure as Code",
-        title: "Multi-Environment Terraform Platform",
-        challenge: "Keep dev, QA and production consistent without turning every environment into copy-paste infrastructure.",
-        decision: "Separate reusable modules from environment configuration and expose infrastructure changes through Git-based review.",
-        solution: "Terraform and Terragrunt with environment-specific inputs, remote state and pull-request-driven change management.",
-        outcome: "More predictable deployments, easier reviews and less configuration drift.",
-        services: ["Terraform","Terragrunt","AWS","Git","Azure DevOps"],
-        diagram: ["Git / PR","Terragrunt","Terraform Modules","Dev · QA · Prod"]
-      },
-      {
-        category: "Architecture",
-        title: "ECS Service Architecture",
-        challenge: "Expose application traffic safely while keeping internal service communication tightly scoped.",
-        decision: "Separate ingress from service-to-service traffic and use security-group relationships instead of broad network access.",
-        solution: "Public ALB, ECS services, ECR images and private service communication governed by security groups.",
-        outcome: "A clearer traffic model with explicit trust boundaries.",
-        services: ["ECS","EC2","ALB","ECR","VPC","Security Groups"],
-        diagram: ["Internet","ALB","ECS Frontend","ECS Backend"]
-      },
-      {
-        category: "Automation",
-        title: "AWS Operations Automation",
-        challenge: "Reduce repetitive operational work such as scheduled instance actions and infrastructure-state checks.",
-        decision: "Move recurring tasks into event-driven, auditable serverless workflows.",
-        solution: "EventBridge schedules, Lambda, Boto3 and S3-driven configuration for EC2 lifecycle and operational actions.",
-        outcome: "Less manual work and workflows that are versioned, reviewed and reusable.",
-        services: ["Lambda","EventBridge","Python","Boto3","S3","EC2"],
-        diagram: ["Schedule / Config","EventBridge","Lambda","AWS APIs"]
-      },
-      {
-        category: "Observability",
-        title: "Cross-Account AWS Observability",
-        challenge: "Centralize visibility while keeping workloads and permissions separated across AWS accounts.",
-        decision: "Use role assumption for cross-account access instead of duplicating monitoring infrastructure.",
-        solution: "Grafana in AWS with IAM roles and controlled cross-account access to target metrics.",
-        outcome: "Centralized dashboards with a cleaner permission model.",
-        services: ["Grafana","IAM","STS","CloudWatch","ECS Fargate"],
-        diagram: ["Grafana","AssumeRole","Target Accounts","CloudWatch"]
-      },
-      {
-        category: "Networking",
-        title: "AWS Network Traffic Visualizer",
-        challenge: "Make VPC traffic relationships easier to inspect than raw Flow Log records.",
-        decision: "Transform network telemetry into a visual model centered around AWS network interfaces.",
-        solution: "Python and Boto3 to enrich ENIs with VPC Flow Log data and map IP/port relationships.",
-        outcome: "A more intuitive way to investigate connectivity and traffic patterns.",
-        services: ["Python","Boto3","VPC Flow Logs","ENI","Networking"],
-        diagram: ["VPC Flow Logs","Python / Boto3","ENI Context","Traffic Map"]
-      }
+      {featured:true,company:"Netrix Global",logo:"https://www.netrixglobal.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=netrixglobal.com&sz=128",initials:"N",category:"AWS Migration & Architecture",title:"On-Prem Data Platform Migration to AWS",challenge:"Migrate an on-premises data-oriented application to AWS while preserving numerous external integrations, including banking connections and other third-party dependencies.",architecture:"The AWS environment included Lambda, DynamoDB, API Gateway, Load Balancers and EC2 workloads used by Power BI consumers. The landing-zone foundation also required AWS Control Tower, Organizations and IAM Identity Center.",contribution:"I was responsible for the AWS infrastructure scope and platform setup. The data-engineering work itself was handled by another team.",outcome:"An AWS foundation capable of supporting the migrated application, its external connectivity and the infrastructure required by analytics consumers.",services:["Control Tower","Organizations","IAM Identity Center","Lambda","DynamoDB","API Gateway","Load Balancers","EC2","Power BI"],diagram:["On-Prem App","API / Integrations","AWS Services","Data Platform","EC2 / Power BI"]},
+      {company:"Netrix Global",logo:"https://www.netrixglobal.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=netrixglobal.com&sz=128",initials:"N",category:"Large-Scale Server Migration",title:"Migration of ~80 Red Hat Linux Servers to EC2",challenge:"Move around 80 Red Hat Linux servers running multiple OS versions from VMware on-premises to AWS.",architecture:"The primary path used AWS MGN to replicate supported servers directly into EC2. For operating-system versions not supported by MGN, an alternative image-based migration workflow was required.",contribution:"I participated in the infrastructure and migration work, including the fallback path: create an image from the on-prem VMware workload, upload it to S3, create an AMI and launch the resulting EC2 instance.",outcome:"A mixed migration strategy that allowed both MGN-supported and unsupported Red Hat workloads to be moved into EC2.",services:["AWS MGN","EC2","S3","AMI","VMware","Red Hat Linux"],diagram:["VMware","MGN","EC2","Fallback: Image → S3","AMI → EC2"]},
+      {company:"Caylent",logo:"https://caylent.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=caylent.com&sz=128",initials:"C",category:"CI/CD & Migration",title:"Transportation Payment Platform Migration",challenge:"Support a large migration program for a transportation payment application in the United States.",architecture:"My scope was mainly the delivery pipeline layer rather than the AWS platform itself.",contribution:"I reorganized and adapted GitHub-based pipelines so the application delivery process aligned with the target migration environment.",outcome:"Deployment workflows better aligned with the migration target and delivery process.",services:["GitHub","GitHub Actions","CI/CD","Migration"],diagram:["Source","GitHub","Pipelines","Target Platform"]},
+      {company:"Caylent",logo:"https://caylent.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=caylent.com&sz=128",initials:"C",category:"AWS Migration",title:"MGN Migration with Auto Scaling Architecture",challenge:"Migrate workloads to AWS while also preparing a scalable target architecture and account foundation.",architecture:"The target environment combined AWS MGN, EC2, Auto Scaling and Load Balancers, with AWS Control Tower and Organizations used for the broader AWS environment.",contribution:"I worked on the migration and infrastructure components as well as GitHub-based pipelines used in the delivery process.",outcome:"A migration path backed by a more scalable EC2 architecture and a structured AWS account foundation.",services:["AWS MGN","EC2","Auto Scaling","Load Balancers","Control Tower","Organizations","GitHub"],diagram:["On-Prem","AWS MGN","EC2 Auto Scaling","Load Balancer","Application"]},
+      {company:"Caylent",logo:"https://caylent.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=caylent.com&sz=128",initials:"C",category:"Windows & SQL Migration",title:"Windows IIS and SQL Server Migration to AWS",challenge:"Migrate Windows application servers running IIS and SQL Server workloads into AWS.",architecture:"The current target is based on EC2-hosted Windows application servers running IIS and EC2-hosted SQL Server, with Grafana used for monitoring and alerts.",contribution:"I am working on the AWS infrastructure, Windows/IIS and SQL migration context, Grafana monitoring and GitHub pipelines.",outcome:"An EC2-based target architecture for the application and database workloads with operational visibility through monitoring and alerting.",services:["EC2","Windows Server","IIS","SQL Server","Grafana","GitHub","CI/CD"],diagram:["Users","Load Balancer","EC2 / IIS","EC2 / SQL Server","Grafana"]}
     ],
-
-    certifications: [
-      { issuer: "AWS", name: "Well-Architected Proficient", badge: "AWS", url: "" },
-      { issuer: "AWS", name: "AWS API Security", badge: "AWS", url: "" },
-      { issuer: "Anthropic", name: "Claude Certified Associate — Foundations", badge: "AI", url: "" },
-      { issuer: "", name: "Scrum Foundation Professional Certificate (SFPC) — Spanish", badge: "S", url: "" },
-      { issuer: "AWS", name: "AWS Partner: Cloud Economics Accreditation", badge: "AWS", url: "" }
+    certifications:[
+      {category:"AWS",name:"Well-Architected Proficient",badge:"AWS",logo:"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail",logoFallback:"https://aws.amazon.com/favicon.ico"},
+      {category:"AWS",name:"AWS API Security",badge:"AWS",logo:"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail",logoFallback:"https://aws.amazon.com/favicon.ico"},
+      {category:"AI",name:"Claude Certified Associate — Foundations",badge:"AI",logo:"https://claude.ai/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=claude.ai&sz=128"},
+      {category:"Agile",name:"Scrum Foundation Professional Certificate (SFPC) — Spanish",badge:"S",logo:"https://certiprof.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=certiprof.com&sz=128"},
+      {category:"AWS",name:"AWS Partner: Cloud Economics Accreditation",badge:"AWS",logo:"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail",logoFallback:"https://aws.amazon.com/favicon.ico"}
     ],
-
-    education: [
-      {
-        institution: "Instituto Superior Tecnologico Empresarial Argentino (ISTEA)",
-        program: "Higher Education — Information Technology",
-        period: "2020 — 2024"
-      },
-      {
-        institution: "Ingeniero Eduardo Latzina",
-        program: "High School — Computer Technician",
-        period: "2006 — 2013"
-      }
+    education:[
+      {institution:"Instituto Superior Tecnologico Empresarial Argentino (ISTEA)",program:"Higher Education — Information Technology",period:"2020 — 2024"},
+      {institution:"Ingeniero Eduardo Latzina",program:"High School — Computer Technician",period:"2006 — 2013"}
     ],
-
-    skills: [
-      { title: "Core AWS & Architecture", level: "Primary focus", items: ["AWS","AWS Cloud Migration","Cloud Architecture","VPC","EC2","ECS","Lambda","S3","IAM","Route 53"] },
-      { title: "Infrastructure as Code", level: "Primary focus", items: ["Terraform","Terragrunt","AWS CDK","TypeScript","Git","CI/CD"] },
-      { title: "Automation & Operations", level: "Primary focus", items: ["Python","Boto3","Shell","EventBridge","Linux","Grafana","Datadog"] },
-      { title: "Containers & Platform", level: "Complementary", items: ["Docker","ECR","Kubernetes","Helm","EKS","PostgreSQL"] },
-      { title: "Earlier Infrastructure Foundation", level: "Background", items: ["Windows Server","Active Directory","SharePoint","SQL Server","Splunk","Azure"] }
+    skills:[
+      {title:"AWS Infrastructure & Architecture",level:"Primary focus",items:["AWS","EC2","ECS","Lambda","S3","IAM","Route 53","API Gateway","Load Balancers","Control Tower","Organizations","IAM Identity Center"]},
+      {title:"Cloud Migrations",level:"Primary focus",items:["AWS MGN","VMware to AWS","Windows Workloads","Linux / Red Hat","AMI Import","Cutover Planning"]},
+      {title:"Infrastructure as Code & Delivery",level:"Primary focus",items:["Terraform","Terragrunt","AWS CDK","GitHub Actions","Azure DevOps","CI/CD","Git"]},
+      {title:"Operations & Observability",level:"Primary focus",items:["Grafana","Datadog","Splunk","ServiceNow","Python","Boto3","Linux"]},
+      {title:"Containers",level:"Complementary",items:["Docker","ECS","ECR","Kubernetes","Helm","EKS"]},
+      {title:"Infrastructure Foundation",level:"Background",items:["Windows Server","Active Directory","DNS","DHCP","IIS","Exchange","SharePoint","SQL Server","Office 365"]}
     ]
   },
 
   es: {
-    professionalPrinciples: [
-      "Responsabilidad",
-      "Profesionalismo",
-      "Calma bajo presión",
-      "Trabajo en equipo",
-      "Ayudar a otros a superar obstáculos"
-    ],
     career: [
-      {
-        company: "Caylent",
-        location: "Mendoza, Argentina",
-        roles: [
-          { role: "Senior Cloud Engineer", period: "May 2026 — Actualidad" },
-          { role: "Cloud Engineer", period: "Jun 2025 — Actualidad" }
-        ],
-        summary: "Etapa actual de mi carrera enfocada en cloud engineering. Mi perfil de LinkedIn lista migración a la nube de AWS, CDK y TypeScript entre mis aptitudes principales.",
-        technical: [
-          "Migración a la nube de AWS",
-          "AWS CDK",
-          "TypeScript",
-          "Cloud engineering"
-        ],
-        professional: [
-          "Crecimiento hacia un rol senior de cloud engineering",
-          "Responsabilidad y profesionalismo",
-          "Trabajo en equipo y colaboración"
-        ]
-      },
-      {
-        company: "Netrix Global",
-        location: "Argentina",
-        roles: [
-          { role: "Sr. Cloud Engineer", period: "Sep 2022 — Jun 2025" }
-        ],
-        summary: "Rol de senior cloud engineering. El PDF exportado de LinkedIn no incluye responsabilidades detalladas para esta posición.",
-        technical: [
-          "Cloud engineering"
-        ],
-        professional: [
-          "Experiencia senior en ingeniería cloud",
-          "Mayor desarrollo de responsabilidades orientadas a cloud"
-        ]
-      },
-      {
-        company: "3XM Group",
-        location: "Argentina",
-        roles: [
-          { role: "DevOps", period: "Ene 2022 — Sep 2022" }
-        ],
-        summary: "Rol DevOps. El PDF exportado de LinkedIn no incluye responsabilidades detalladas para esta posición.",
-        technical: [
-          "DevOps"
-        ],
-        professional: [
-          "Transición hacia trabajo enfocado en cloud y DevOps"
-        ]
-      },
-      {
-        company: "Accenture",
-        location: "Argentina",
-        roles: [
-          { role: "Tech Arch Delivery Sr Analyst", period: "Nov 2020 — Dic 2021" }
-        ],
-        summary: "Administración AWS, coordinación de deployments, CI/CD, administración Windows, monitoreo y coordinación de equipo.",
-        technical: [
-          "AWS: S3, ElastiCache, CloudFront, Route 53, Lambda y Secrets Manager",
-          "Azure DevOps CI/CD",
-          "Administración Windows Server 2013 / 2016",
-          "Monitoreo con Datadog",
-          "ServiceNow"
-        ],
-        professional: [
-          "Planificación, coordinación y ejecución de deployments",
-          "Coordinación de equipo",
-          "Monitoreo operativo y ejecución de cambios"
-        ]
-      },
-      {
-        company: "EY",
-        location: "Argentina",
-        roles: [
-          { role: "SharePoint Infrastructure Systems Management & Support", period: "Dic 2018 — Mar 2020" }
-        ],
-        summary: "Gestión y soporte de infraestructura SharePoint con Windows Server y troubleshooting de logs.",
-        technical: [
-          "Gestión y soporte de infraestructura SharePoint",
-          "Patching de SharePoint",
-          "SharePoint Designer 2010 / 2013",
-          "InfoPath 2013",
-          "Windows Server 2012 / 2016",
-          "Splunk para troubleshooting de logs"
-        ],
-        professional: [
-          "Soporte de infraestructura productiva",
-          "Disciplina de mantenimiento y patching",
-          "Troubleshooting a partir de logs operativos"
-        ]
-      },
-      {
-        company: "Softtek",
-        location: "Buenos Aires, Argentina",
-        roles: [
-          { role: "SharePoint Infrastructure / Developer", period: "Sep 2016 — Dic 2018" }
-        ],
-        summary: "Rol híbrido de infraestructura y desarrollo sobre SharePoint, Windows Server, SQL Server y Azure.",
-        technical: [
-          "Análisis, implementación y administración de SharePoint 2010 / 2013 / 2016",
-          "HTML, CSS, Bootstrap, AngularJS, jQuery y JavaScript",
-          "SharePoint Designer 2010 / 2013",
-          "SQL Server 2012 / 2016",
-          "Administración e implementación Windows Server 2012 / 2016",
-          "Administración de tenant en Azure"
-        ],
-        professional: [
-          "Combinar perspectivas de infraestructura y desarrollo",
-          "Implementación y administración en múltiples capas tecnológicas"
-        ]
-      },
-      {
-        company: "Solnik S.A.",
-        location: "",
-        roles: [
-          { role: "Technical Support", period: "Jun 2015 — Ago 2016" }
-        ],
-        summary: "Soporte técnico e implementación de infraestructura de forma práctica.",
-        technical: [
-          "Administración de usuarios en Active Directory",
-          "Cableado estructurado",
-          "Mantenimiento de antivirus Kaspersky",
-          "Implementación y soporte de infraestructura",
-          "Windows Server 2008 R2 / 2012",
-          "Telefonía IP"
-        ],
-        professional: [
-          "Soporte de infraestructura hands-on",
-          "Administración de usuarios y endpoints",
-          "Trabajo sobre infraestructura física y servidores"
-        ]
-      },
-      {
-        company: "Readymind IT",
-        location: "Buenos Aires, Argentina",
-        roles: [
-          { role: "Technical Support", period: "Oct 2013 — Feb 2015" }
-        ],
-        summary: "Primera experiencia profesional dando soporte de infraestructura, hardware, software y entornos de clientes de distintos rubros.",
-        technical: [
-          "Soporte e implementación Windows Server 2008 / 2012",
-          "Cableado estructurado",
-          "Soporte de hardware y software",
-          "Telefonía IP"
-        ],
-        professional: [
-          "Soporte a clientes de distintos rubros",
-          "Resolución de problemas en contextos variados",
-          "Construcción de una base sólida de infraestructura y soporte"
-        ]
-      }
+      {company:"Caylent",logo:"https://caylent.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=caylent.com&sz=128",initials:"C",location:"Mendoza, Argentina",roles:[{role:"Senior Cloud Engineer",period:"May 2026 — Actualidad"},{role:"Cloud Engineer",period:"Jun 2025 — May 2026"}],summary:"Mi etapa actual, enfocada en migraciones cloud y entrega de infraestructura en entornos AWS.",technical:["Pipelines CI/CD basados en GitHub","Migraciones con AWS MGN","EC2, Auto Scaling y Load Balancers","AWS Control Tower y Organizations","Workloads Windows Server, IIS y SQL Server sobre EC2","Monitoreo y alarmas con Grafana"],professional:["Trabajar dentro de programas de migración grandes con responsabilidades bien definidas","Adaptar pipelines de deployment a arquitecturas objetivo","Combinar ejecución de migraciones, infraestructura y operación","Crecimiento hacia un rol de Senior Cloud Engineer"]},
+      {company:"Netrix Global",logo:"https://www.netrixglobal.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=netrixglobal.com&sz=128",initials:"N",location:"Argentina",roles:[{role:"Sr. Cloud Engineer",period:"Sep 2022 — Jun 2025"}],summary:"Una etapa muy importante de cloud engineering, con migraciones AWS, servicios de landing zone, CI/CD e infraestructura para workloads orientados a datos.",technical:["AWS Control Tower, Organizations e IAM Identity Center","Lambda, DynamoDB, API Gateway y Load Balancers","Workloads EC2 utilizados por consumidores de Power BI","Migración con AWS MGN de ~80 servidores Red Hat Linux","Ruta alternativa imagen → S3 → AMI para workloads no soportados","CI/CD y algo de exposición a Kubernetes"],professional:["Responsabilidad sobre el alcance de infraestructura colaborando con equipos especializados de datos","Diseñar alternativas cuando la herramienta de migración preferida no era compatible","Trabajar con requerimientos de conectividad externa y múltiples integraciones","Manejar migraciones de grandes lotes de servidores"]},
+      {company:"3XM Group",logo:"https://www.3xmgroup.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=3xmgroup.com&sz=128",initials:"3X",location:"Argentina",roles:[{role:"DevOps",period:"Ene 2022 — Sep 2022"}],summary:"Un rol completamente DevOps y AWS, manteniendo infraestructura para distintos clientes y arquitecturas de aplicaciones.",technical:["EC2 y ECS","Lambda","Elastic Load Balancing","CloudFront","Elastic Beanstalk","Operación de infraestructura AWS"],professional:["Trabajar con múltiples clientes en lugar de una única plataforma","Adaptarme rápidamente a diferentes arquitecturas y necesidades operativas","Fortalecer la transición desde infraestructura enterprise hacia operaciones cloud"]},
+      {company:"Accenture",logo:"https://www.accenture.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=accenture.com&sz=128",initials:"A",location:"Argentina",roles:[{role:"Tech Arch Delivery Sr Analyst",period:"Nov 2020 — Dic 2021"}],summary:"Mi primera etapa fuerte en AWS, combinando soporte de aplicaciones, servicios cloud, CI/CD, monitoreo y coordinación de equipo.",technical:["AWS: S3, ElastiCache, CloudFront, Route 53, Lambda y Secrets Manager","Azure DevOps CI/CD","Migración de pipelines de Octopus hacia Azure DevOps","Monitoreo con Datadog","ServiceNow","Administración Windows Server"],professional:["Coordinación de un equipo distribuido de tres personas entre China e India","Planificación y ejecución de deployments de aplicaciones","Trabajo entre zonas horarias y equipos remotos","Inicio de la transición desde infraestructura tradicional hacia AWS"]},
+      {company:"EY",logo:"https://www.ey.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=ey.com&sz=128",initials:"EY",location:"Argentina",roles:[{role:"SharePoint Infrastructure Systems Management & Support",period:"Dic 2018 — Mar 2020"}],summary:"Soporte enterprise con mayor foco en infraestructura alrededor de entornos SharePoint on-premises.",technical:["Gestión y soporte de infraestructura SharePoint","Patching de SharePoint","Windows Server 2012 / 2016","Monitoreo y troubleshooting de logs con Splunk","ServiceNow","SharePoint Designer e InfoPath"],professional:["Operar ambientes enterprise con procesos formales de soporte","Mejorar troubleshooting mediante logs y monitoreo","Desarrollar mayor disciplina operativa"]},
+      {company:"Softtek",logo:"https://www.softtek.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=softtek.com&sz=128",initials:"S",location:"Buenos Aires, Argentina",roles:[{role:"SharePoint Infrastructure / Developer",period:"Sep 2016 — Dic 2018"}],summary:"Un rol mixto de infraestructura y desarrollo frontend centrado en Microsoft SharePoint.",technical:["Infraestructura SharePoint 2010 / 2013 / 2016","HTML, CSS, JavaScript y AngularJS","Bootstrap y jQuery","SQL Server 2012 / 2016","Windows Server 2012 / 2016","Administración de tenant en Azure"],professional:["Entender aplicaciones tanto desde infraestructura como desde frontend","Trabajar sobre múltiples capas técnicas y no una sola especialidad","Construir experiencia más profunda en plataformas enterprise"]},
+      {company:"Solnik S.A.",logo:"https://www.solnik.com.ar/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=solnik.com.ar&sz=128",initials:"S",location:"Argentina",roles:[{role:"Technical Support / Server Administration",period:"Jun 2015 — Ago 2016"}],summary:"Un rol híbrido entre soporte de primer nivel y administración de servidores Windows.",technical:["Administración de Active Directory","Trabajo de migración hacia Office 365","SharePoint","Windows Server 2008 R2 / 2012","Cableado estructurado","Telefonía IP"],professional:["Pasar del soporte a usuario hacia administración de servidores","Participar en migraciones con impacto a nivel organizacional","Tomar mayor responsabilidad sobre servicios centrales de IT"]},
+      {company:"Readymind IT",logo:"https://readymind.ms/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=readymind.ms&sz=128",initials:"R",location:"Buenos Aires, Argentina",roles:[{role:"Technical Support",period:"Oct 2013 — Feb 2015"}],summary:"Mi punto de partida profesional: soporte a usuarios, infraestructura física y despliegues Windows Server para distintos clientes.",technical:["Configuración de servidores físicos on-premises","Active Directory, DHCP y DNS","Exchange e IIS","File Server y Print Server","Windows Server 2008 / 2012","Telefonía IP","Soporte L1 de hardware y software"],professional:["Aprender a diagnosticar desde el usuario hasta el servidor","Trabajar directamente con clientes y distintos tipos de negocio","Construir una base hands-on de infraestructura","Aprender responsabilidad mediante el soporte operativo diario"]}
     ],
-
-    cases: [
-      {
-        featured: true,
-        category: "Migración",
-        title: "Migración de Workloads Empresariales a AWS",
-        challenge: "Mover workloads productivos desde on-premises hacia AWS reduciendo el riesgo del cutover y manteniendo un proceso repetible.",
-        decision: "Separar discovery, replicación o pre-seeding, preparación de infraestructura, validación y cutover final en etapas explícitas.",
-        solution: "Combinar patrones de migración y transferencia de datos de AWS con infraestructura administrada por Terraform, checkpoints de validación y cutover DNS controlado.",
-        outcome: "Un runbook más claro, menor riesgo operativo y un patrón mejorable migración tras migración.",
-        services: ["AWS","EC2","MGN","S3","EBS","VPC","Terraform","Route 53"],
-        diagram: ["On-prem","Replicación / Seed","Landing AWS","Validación","Cutover DNS"]
-      },
-      {
-        category: "Infrastructure as Code",
-        title: "Plataforma Terraform Multi-Ambiente",
-        challenge: "Mantener dev, QA y producción consistentes sin convertir cada ambiente en infraestructura copiada.",
-        decision: "Separar módulos reutilizables de configuración por ambiente y revisar cambios mediante Git.",
-        solution: "Terraform y Terragrunt con inputs por ambiente, remote state y cambios mediante pull requests.",
-        outcome: "Despliegues más predecibles, mejor revisión y menos drift.",
-        services: ["Terraform","Terragrunt","AWS","Git","Azure DevOps"],
-        diagram: ["Git / PR","Terragrunt","Módulos Terraform","Dev · QA · Prod"]
-      },
-      {
-        category: "Arquitectura",
-        title: "Arquitectura de Servicios en ECS",
-        challenge: "Exponer tráfico de aplicación de forma segura manteniendo la comunicación interna estrictamente controlada.",
-        decision: "Separar ingreso de tráfico y comunicación entre servicios, usando relaciones entre security groups.",
-        solution: "ALB público, servicios ECS, imágenes ECR y comunicación privada gobernada por security groups.",
-        outcome: "Un modelo de tráfico más claro con límites de confianza explícitos.",
-        services: ["ECS","EC2","ALB","ECR","VPC","Security Groups"],
-        diagram: ["Internet","ALB","ECS Frontend","ECS Backend"]
-      },
-      {
-        category: "Automatización",
-        title: "Automatización de Operaciones AWS",
-        challenge: "Reducir tareas repetitivas como acciones programadas sobre instancias y chequeos de infraestructura.",
-        decision: "Mover tareas recurrentes a workflows serverless orientados a eventos y auditables.",
-        solution: "EventBridge, Lambda, Boto3 y configuración desde S3 para ciclo de vida de EC2 y operaciones.",
-        outcome: "Menos trabajo manual y workflows versionados, revisables y reutilizables.",
-        services: ["Lambda","EventBridge","Python","Boto3","S3","EC2"],
-        diagram: ["Schedule / Config","EventBridge","Lambda","AWS APIs"]
-      },
-      {
-        category: "Observabilidad",
-        title: "Observabilidad AWS Cross-Account",
-        challenge: "Centralizar visibilidad manteniendo workloads y permisos separados entre cuentas AWS.",
-        decision: "Usar role assumption en lugar de duplicar infraestructura de monitoreo.",
-        solution: "Grafana en AWS con roles IAM y acceso cross-account controlado a métricas.",
-        outcome: "Dashboards centralizados con un modelo de permisos más claro.",
-        services: ["Grafana","IAM","STS","CloudWatch","ECS Fargate"],
-        diagram: ["Grafana","AssumeRole","Cuentas AWS","CloudWatch"]
-      },
-      {
-        category: "Networking",
-        title: "Visualizador de Tráfico de Red en AWS",
-        challenge: "Hacer más fácil investigar relaciones de tráfico que leyendo VPC Flow Logs crudos.",
-        decision: "Transformar telemetría de red en un modelo visual centrado en interfaces AWS.",
-        solution: "Python y Boto3 para enriquecer ENIs con VPC Flow Logs y mapear relaciones de IPs y puertos.",
-        outcome: "Una forma más intuitiva de investigar conectividad y patrones de tráfico.",
-        services: ["Python","Boto3","VPC Flow Logs","ENI","Networking"],
-        diagram: ["VPC Flow Logs","Python / Boto3","Contexto ENI","Mapa de Tráfico"]
-      }
+    cases:[
+      {featured:true,company:"Netrix Global",logo:"https://www.netrixglobal.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=netrixglobal.com&sz=128",initials:"N",category:"Migración & Arquitectura AWS",title:"Migración de Plataforma de Datos On-Prem a AWS",challenge:"Migrar una aplicación orientada a datos desde on-premises hacia AWS preservando numerosas integraciones externas, incluyendo conexiones bancarias y otras dependencias de terceros.",architecture:"El entorno AWS incluía Lambda, DynamoDB, API Gateway, Load Balancers y workloads EC2 utilizados por consumidores de Power BI. La base de landing zone también requería AWS Control Tower, Organizations e IAM Identity Center.",contribution:"Fui responsable del alcance de infraestructura AWS y de la configuración de plataforma. El trabajo de ingeniería de datos en sí fue realizado por otro equipo.",outcome:"Una base AWS capaz de soportar la aplicación migrada, su conectividad externa y la infraestructura requerida por los consumidores de analytics.",services:["Control Tower","Organizations","IAM Identity Center","Lambda","DynamoDB","API Gateway","Load Balancers","EC2","Power BI"],diagram:["App On-Prem","API / Integraciones","Servicios AWS","Plataforma de Datos","EC2 / Power BI"]},
+      {company:"Netrix Global",logo:"https://www.netrixglobal.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=netrixglobal.com&sz=128",initials:"N",category:"Migración Masiva de Servidores",title:"Migración de ~80 Servidores Red Hat Linux a EC2",challenge:"Mover aproximadamente 80 servidores Red Hat Linux con distintas versiones de sistema operativo desde VMware on-premises hacia AWS.",architecture:"La ruta principal utilizó AWS MGN para replicar directamente a EC2 los servidores soportados. Para versiones de sistema operativo no compatibles con MGN fue necesario un flujo alternativo basado en imágenes.",contribution:"Participé en el trabajo de infraestructura y migración, incluyendo el camino alternativo: crear una imagen desde el workload VMware on-premises, subirla a S3, crear una AMI y lanzar la instancia EC2 resultante.",outcome:"Una estrategia mixta que permitió migrar a EC2 tanto workloads Red Hat soportados por MGN como aquellos no compatibles.",services:["AWS MGN","EC2","S3","AMI","VMware","Red Hat Linux"],diagram:["VMware","MGN","EC2","Fallback: Imagen → S3","AMI → EC2"]},
+      {company:"Caylent",logo:"https://caylent.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=caylent.com&sz=128",initials:"C",category:"CI/CD & Migración",title:"Migración de Plataforma de Pagos para Transporte",challenge:"Dar soporte a un programa grande de migración de una aplicación de pagos para transporte en Estados Unidos.",architecture:"Mi alcance estuvo principalmente en la capa de pipelines y delivery, más que en la plataforma AWS propiamente dicha.",contribution:"Reorganicé y adapté pipelines basados en GitHub para alinear el proceso de deployment de la aplicación con el entorno objetivo de la migración.",outcome:"Workflows de deployment mejor alineados con el destino de migración y el proceso de entrega.",services:["GitHub","GitHub Actions","CI/CD","Migration"],diagram:["Código","GitHub","Pipelines","Plataforma Objetivo"]},
+      {company:"Caylent",logo:"https://caylent.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=caylent.com&sz=128",initials:"C",category:"Migración AWS",title:"Migración MGN con Arquitectura Auto Scaling",challenge:"Migrar workloads hacia AWS preparando al mismo tiempo una arquitectura objetivo escalable y una base estructurada de cuentas.",architecture:"El entorno objetivo combinó AWS MGN, EC2, Auto Scaling y Load Balancers, junto con AWS Control Tower y Organizations para la estructura general de AWS.",contribution:"Trabajé sobre los componentes de migración e infraestructura y también sobre pipelines basados en GitHub utilizados en el proceso de delivery.",outcome:"Una ruta de migración respaldada por una arquitectura EC2 más escalable y una base de cuentas AWS estructurada.",services:["AWS MGN","EC2","Auto Scaling","Load Balancers","Control Tower","Organizations","GitHub"],diagram:["On-Prem","AWS MGN","EC2 Auto Scaling","Load Balancer","Aplicación"]},
+      {company:"Caylent",logo:"https://caylent.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=caylent.com&sz=128",initials:"C",category:"Migración Windows & SQL",title:"Migración de Windows IIS y SQL Server a AWS",challenge:"Migrar servidores Windows de aplicación ejecutando IIS y workloads SQL Server hacia AWS.",architecture:"El objetivo actual se basa en servidores Windows sobre EC2 ejecutando IIS y SQL Server también sobre EC2, con Grafana utilizado para monitoreo y alarmas.",contribution:"Estoy trabajando sobre la infraestructura AWS, el contexto de migración Windows/IIS y SQL, monitoreo con Grafana y pipelines en GitHub.",outcome:"Una arquitectura objetivo basada en EC2 para aplicación y base de datos con visibilidad operativa mediante monitoreo y alertas.",services:["EC2","Windows Server","IIS","SQL Server","Grafana","GitHub","CI/CD"],diagram:["Usuarios","Load Balancer","EC2 / IIS","EC2 / SQL Server","Grafana"]}
     ],
-
-    certifications: [
-      { issuer: "AWS", name: "Well-Architected Proficient", badge: "AWS", url: "" },
-      { issuer: "AWS", name: "AWS API Security", badge: "AWS", url: "" },
-      { issuer: "Anthropic", name: "Claude Certified Associate — Foundations", badge: "AI", url: "" },
-      { issuer: "", name: "Scrum Foundation Professional Certificate (SFPC) — Spanish", badge: "S", url: "" },
-      { issuer: "AWS", name: "AWS Partner: Cloud Economics Accreditation", badge: "AWS", url: "" }
+    certifications:[
+      {category:"AWS",name:"Well-Architected Proficient",badge:"AWS",logo:"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail",logoFallback:"https://aws.amazon.com/favicon.ico"},
+      {category:"AWS",name:"AWS API Security",badge:"AWS",logo:"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail",logoFallback:"https://aws.amazon.com/favicon.ico"},
+      {category:"AI",name:"Claude Certified Associate — Foundations",badge:"AI",logo:"https://claude.ai/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=claude.ai&sz=128"},
+      {category:"Agile",name:"Scrum Foundation Professional Certificate (SFPC) — Spanish",badge:"S",logo:"https://certiprof.com/favicon.ico",logoFallback:"https://www.google.com/s2/favicons?domain=certiprof.com&sz=128"},
+      {category:"AWS",name:"AWS Partner: Cloud Economics Accreditation",badge:"AWS",logo:"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail",logoFallback:"https://aws.amazon.com/favicon.ico"}
     ],
-
-    education: [
-      {
-        institution: "Instituto Superior Tecnologico Empresarial Argentino (ISTEA)",
-        program: "Educación superior — Information Technology",
-        period: "2020 — 2024"
-      },
-      {
-        institution: "Ingeniero Eduardo Latzina",
-        program: "Secundario — Técnico en Computación",
-        period: "2006 — 2013"
-      }
+    education:[
+      {institution:"Instituto Superior Tecnologico Empresarial Argentino (ISTEA)",program:"Educación superior — Information Technology",period:"2020 — 2024"},
+      {institution:"Ingeniero Eduardo Latzina",program:"Secundario — Técnico en Computación",period:"2006 — 2013"}
     ],
-
-    skills: [
-      { title: "AWS & Arquitectura", level: "Foco principal", items: ["AWS","Migración a AWS","Cloud Architecture","VPC","EC2","ECS","Lambda","S3","IAM","Route 53"] },
-      { title: "Infrastructure as Code", level: "Foco principal", items: ["Terraform","Terragrunt","AWS CDK","TypeScript","Git","CI/CD"] },
-      { title: "Automatización & Operaciones", level: "Foco principal", items: ["Python","Boto3","Shell","EventBridge","Linux","Grafana","Datadog"] },
-      { title: "Contenedores & Plataforma", level: "Complementario", items: ["Docker","ECR","Kubernetes","Helm","EKS","PostgreSQL"] },
-      { title: "Base de Infraestructura", level: "Experiencia previa", items: ["Windows Server","Active Directory","SharePoint","SQL Server","Splunk","Azure"] }
+    skills:[
+      {title:"Infraestructura & Arquitectura AWS",level:"Foco principal",items:["AWS","EC2","ECS","Lambda","S3","IAM","Route 53","API Gateway","Load Balancers","Control Tower","Organizations","IAM Identity Center"]},
+      {title:"Migraciones Cloud",level:"Foco principal",items:["AWS MGN","VMware a AWS","Workloads Windows","Linux / Red Hat","Importación AMI","Planificación de Cutover"]},
+      {title:"Infrastructure as Code & Delivery",level:"Foco principal",items:["Terraform","Terragrunt","AWS CDK","GitHub Actions","Azure DevOps","CI/CD","Git"]},
+      {title:"Operaciones & Observabilidad",level:"Foco principal",items:["Grafana","Datadog","Splunk","ServiceNow","Python","Boto3","Linux"]},
+      {title:"Contenedores",level:"Complementario",items:["Docker","ECS","ECR","Kubernetes","Helm","EKS"]},
+      {title:"Base de Infraestructura",level:"Experiencia previa",items:["Windows Server","Active Directory","DNS","DHCP","IIS","Exchange","SharePoint","SQL Server","Office 365"]}
     ]
   }
 };

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gastón Freire | AWS Cloud & Infrastructure</title>
-  <meta name="description" content="Gastón Freire — AWS architecture, cloud migrations, Terraform and automation." />
+  <meta name="description" content="Gastón Freire — AWS architecture, cloud migrations, infrastructure, Terraform, CI/CD and automation." />
   <meta name="theme-color" content="#090d16" />
   <link rel="canonical" href="https://gastonfreire.com.ar/" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -14,16 +14,11 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="glow glow-a"></div>
-  <div class="glow glow-b"></div>
+  <div class="glow glow-a"></div><div class="glow glow-b"></div>
 
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
-      <a class="brand" href="#top">
-        <span class="brand-mark">GF</span>
-        <span class="brand-domain">gastonfreire.com.ar</span>
-      </a>
-
+      <a class="brand" href="#top"><span class="brand-mark">GF</span><span class="brand-domain">gastonfreire.com.ar</span></a>
       <nav class="desktop-nav">
         <a href="#about" data-i18n="nav.about">About</a>
         <a href="#journey" data-i18n="nav.journey">Journey</a>
@@ -31,25 +26,19 @@
         <a href="#certifications" data-i18n="nav.certifications">Certifications</a>
         <a href="#skills" data-i18n="nav.skills">Skills</a>
       </nav>
-
       <div class="header-actions">
         <button class="icon-button language-button" id="languageToggle" type="button">ES</button>
-        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme">
-          <span class="theme-dark">☀</span>
-          <span class="theme-light">☾</span>
-        </button>
-        <button class="menu-button" id="menuButton" type="button" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
+        <button class="icon-button" id="themeToggle" type="button"><span class="theme-dark">☀</span><span class="theme-light">☾</span></button>
+        <button class="menu-button" id="menuButton" type="button"><span></span><span></span><span></span></button>
       </div>
     </div>
-
     <nav class="mobile-nav" id="mobileNav">
       <a href="#about" data-i18n="nav.about">About</a>
       <a href="#journey" data-i18n="nav.journey">Journey</a>
       <a href="#case-studies" data-i18n="nav.cases">Case studies</a>
       <a href="#certifications" data-i18n="nav.certifications">Certifications</a>
       <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#education" data-i18n="nav.education">Education</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
   </header>
@@ -58,79 +47,50 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="status-dot"></span><span data-i18n="hero.eyebrow">AWS • Cloud Architecture • Infrastructure</span></div>
+          <div class="eyebrow"><span class="status-dot"></span><span data-i18n="hero.eyebrow">AWS • Cloud Architecture • Migrations</span></div>
           <h1><span data-i18n="hero.greeting">Hi, I'm</span><span class="gradient-text">Gastón Freire.</span></h1>
-          <p class="hero-lead" data-i18n="hero.lead">I design and improve cloud infrastructure with a strong focus on AWS architecture, migrations, Infrastructure as Code and automation.</p>
-
+          <p class="hero-lead" data-i18n="hero.lead">Senior Cloud Engineer focused on AWS infrastructure, cloud migrations, Infrastructure as Code and the operational side of architecture.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#case-studies"><span data-i18n="hero.cases">Explore case studies</span> ↘</a>
             <a class="button button-secondary" href="https://www.linkedin.com/in/gaston-alejandro-freire/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
           </div>
-
           <div class="hero-meta">
-            <div>
-              <span class="meta-label" data-i18n="hero.focus">Focus</span>
-              <strong>AWS · Architecture · Migrations · Terraform · Automation</strong>
-            </div>
-            <div>
-              <span class="meta-label" data-i18n="hero.location">Based in</span>
-              <strong>Mendoza, Argentina</strong>
-            </div>
+            <div><span class="meta-label" data-i18n="hero.focus">Focus</span><strong>AWS · Migrations · Architecture · Terraform · CI/CD</strong></div>
+            <div><span class="meta-label" data-i18n="hero.location">Based in</span><strong>Mendoza, Argentina</strong></div>
           </div>
         </div>
 
         <div class="architecture-card reveal">
           <div class="architecture-card-top">
-            <div>
-              <span class="architecture-label" data-i18n="hero.architectureLabel">Architecture mindset</span>
-              <h2 data-i18n="hero.architectureTitle">From requirement to reliable infrastructure.</h2>
-            </div>
+            <div><span class="architecture-label" data-i18n="hero.architectureLabel">Career evolution</span><h2 data-i18n="hero.architectureTitle">From on-prem infrastructure to AWS migrations and cloud architecture.</h2></div>
             <span class="architecture-code">AWS</span>
           </div>
-
-          <div class="architecture-pipeline">
-            <div class="arch-node"><span>01</span><strong data-i18n="hero.arch1">Understand</strong><small data-i18n="hero.arch1Sub">Business & constraints</small></div>
-            <div class="arch-arrow">→</div>
-            <div class="arch-node"><span>02</span><strong data-i18n="hero.arch2">Design</strong><small data-i18n="hero.arch2Sub">Trade-offs & patterns</small></div>
-            <div class="arch-arrow">→</div>
-            <div class="arch-node"><span>03</span><strong data-i18n="hero.arch3">Automate</strong><small data-i18n="hero.arch3Sub">IaC & repeatability</small></div>
-            <div class="arch-arrow">→</div>
-            <div class="arch-node"><span>04</span><strong data-i18n="hero.arch4">Operate</strong><small data-i18n="hero.arch4Sub">Observe & improve</small></div>
+          <div class="career-path">
+            <div class="path-step"><span>01</span><strong data-i18n="hero.path1">Support</strong><small>Windows · AD · Networking</small></div>
+            <div class="path-arrow">→</div>
+            <div class="path-step"><span>02</span><strong data-i18n="hero.path2">Infrastructure</strong><small>SharePoint · Servers</small></div>
+            <div class="path-arrow">→</div>
+            <div class="path-step"><span>03</span><strong data-i18n="hero.path3">Cloud & DevOps</strong><small>AWS · CI/CD</small></div>
+            <div class="path-arrow">→</div>
+            <div class="path-step"><span>04</span><strong data-i18n="hero.path4">Senior Cloud</strong><small>Migrations · Architecture</small></div>
           </div>
-
-          <div class="architecture-footer">
-            <span>terraform plan</span>
-            <span class="architecture-ok">✓ ready for review</span>
-          </div>
+          <div class="architecture-footer"><span>2013 → 2026</span><span class="architecture-ok" data-i18n="hero.architectureFooter">continuous growth</span></div>
         </div>
       </div>
     </section>
 
-    <section class="tech-strip">
-      <div class="container tech-list">
-        <span>AWS</span><span>Cloud Architecture</span><span>Terraform</span><span>Terragrunt</span>
-        <span>Networking</span><span>Python</span><span>EC2</span><span>ECS</span><span>Lambda</span><span>Linux</span>
-      </div>
-    </section>
+    <section class="tech-strip"><div class="container tech-list"><span>AWS</span><span>Cloud Migrations</span><span>Terraform</span><span>Networking</span><span>EC2</span><span>ECS</span><span>Lambda</span><span>GitHub CI/CD</span><span>Windows</span><span>Linux</span></div></section>
 
     <section class="section" id="about">
       <div class="container split-layout">
-        <div class="section-heading reveal">
-          <span class="section-number">01</span>
-          <div>
-            <p class="section-kicker" data-i18n="about.kicker">About</p>
-            <h2 data-i18n="about.title">Cloud engineering beyond the service list.</h2>
-          </div>
-        </div>
-
+        <div class="section-heading reveal"><span class="section-number">01</span><div><p class="section-kicker" data-i18n="about.kicker">About</p><h2 data-i18n="about.title">Infrastructure experience built from the ground up.</h2></div></div>
         <div class="section-content reveal">
-          <p class="large-copy" data-i18n="about.p1">I enjoy understanding why a system behaves the way it does, then turning that understanding into architecture, automation and operational improvements.</p>
-          <p data-i18n="about.p2">My work is centered on AWS infrastructure, migrations, networking and Infrastructure as Code. I care about making technical decisions understandable, repeatable and useful for the people who operate the system.</p>
-
+          <p class="large-copy" data-i18n="about.p1">My career started with hands-on technical support and physical Windows infrastructure, then evolved through enterprise platforms, DevOps and finally AWS cloud engineering.</p>
+          <p data-i18n="about.p2">Today I focus mainly on AWS infrastructure and migrations. I like understanding the full path of a workload — networking, compute, identity, automation, deployment and operations — and making the architecture understandable for the teams that will run it.</p>
           <div class="principles-grid">
-            <article class="principle-card"><span class="principle-icon">01</span><h3 data-i18n="about.ownershipTitle">Ownership</h3><p data-i18n="about.ownershipText">Understand the problem end-to-end and take responsibility for moving it forward.</p></article>
-            <article class="principle-card"><span class="principle-icon">02</span><h3 data-i18n="about.clarityTitle">Clarity</h3><p data-i18n="about.clarityText">Good architecture is easier to operate when decisions and trade-offs are explicit.</p></article>
-            <article class="principle-card"><span class="principle-icon">03</span><h3 data-i18n="about.improveTitle">Continuous improvement</h3><p data-i18n="about.improveText">Automate what repeats, document what matters and keep refining the system.</p></article>
+            <article class="principle-card"><span class="principle-icon">01</span><h3 data-i18n="about.ownershipTitle">Responsibility</h3><p data-i18n="about.ownershipText">Take ownership of the task, understand the impact and move it forward professionally.</p></article>
+            <article class="principle-card"><span class="principle-icon">02</span><h3 data-i18n="about.calmTitle">Calm under pressure</h3><p data-i18n="about.calmText">Troubleshoot methodically and keep communication clear when systems or timelines are under pressure.</p></article>
+            <article class="principle-card"><span class="principle-icon">03</span><h3 data-i18n="about.teamTitle">Teamwork</h3><p data-i18n="about.teamText">Share context, help teammates and work across technical and geographic boundaries.</p></article>
           </div>
         </div>
       </div>
@@ -138,98 +98,48 @@
 
     <section class="section section-alt" id="journey">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-number">02</span>
-          <div>
-            <p class="section-kicker" data-i18n="journey.kicker">Career journey</p>
-            <h2 data-i18n="journey.title">What each stage taught me.</h2>
-            <p class="section-intro" data-i18n="journey.intro">More than job titles: technical growth, professional growth and the way each experience shaped how I work.</p>
-          </div>
-        </div>
-        <div class="profile-values reveal" id="professionalPrinciples"></div>
+        <div class="section-heading reveal"><span class="section-number">02</span><div><p class="section-kicker" data-i18n="journey.kicker">Career journey</p><h2 data-i18n="journey.title">What each stage added.</h2><p class="section-intro" data-i18n="journey.intro">A timeline of the technical foundation, cloud transition and professional lessons behind my current role.</p></div></div>
         <div class="timeline" id="careerTimeline"></div>
       </div>
     </section>
 
     <section class="section" id="case-studies">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-number">03</span>
-          <div>
-            <p class="section-kicker" data-i18n="cases.kicker">AWS architecture & case studies</p>
-            <h2 data-i18n="cases.title">Problems, decisions and outcomes.</h2>
-            <p class="section-intro" data-i18n="cases.intro">Generic project names, real architecture patterns. The goal is to explain the problem, the decision and the result without exposing client information.</p>
-          </div>
-        </div>
+        <div class="section-heading reveal"><span class="section-number">03</span><div><p class="section-kicker" data-i18n="cases.kicker">Selected case studies</p><h2 data-i18n="cases.title">Real migration and infrastructure work.</h2><p class="section-intro" data-i18n="cases.intro">The client names and sensitive details are intentionally omitted. Each case focuses on the problem, architecture and my contribution.</p></div></div>
         <div class="case-grid" id="caseStudies"></div>
       </div>
     </section>
 
     <section class="section section-alt" id="certifications">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-number">04</span>
-          <div>
-            <p class="section-kicker" data-i18n="certs.kicker">Certifications</p>
-            <h2 data-i18n="certs.title">Structured learning, applied in practice.</h2>
-            <p class="section-intro" data-i18n="certs.intro">This section is prepared to mirror the complete certification list from LinkedIn.</p>
-          </div>
-        </div>
+        <div class="section-heading reveal"><span class="section-number">04</span><div><p class="section-kicker" data-i18n="certs.kicker">Certifications</p><h2 data-i18n="certs.title">Continuous learning.</h2><p class="section-intro" data-i18n="certs.intro">Certifications and accreditations currently listed on my professional profile.</p></div></div>
         <div class="certification-grid" id="certificationGrid"></div>
       </div>
     </section>
 
     <section class="section" id="skills">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-number">05</span>
-          <div>
-            <p class="section-kicker" data-i18n="skills.kicker">Skills</p>
-            <h2 data-i18n="skills.title">Primary focus first.</h2>
-            <p class="section-intro" data-i18n="skills.intro">Technologies grouped by how they fit into my work instead of a flat list.</p>
-          </div>
-        </div>
+        <div class="section-heading reveal"><span class="section-number">05</span><div><p class="section-kicker" data-i18n="skills.kicker">Skills</p><h2 data-i18n="skills.title">Primary focus first.</h2><p class="section-intro" data-i18n="skills.intro">Technologies grouped by how they fit into my work today and the foundation I built earlier in my career.</p></div></div>
         <div class="skills-grid" id="skillsGrid"></div>
       </div>
     </section>
 
-
     <section class="section section-alt" id="education">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-number">06</span>
-          <div>
-            <p class="section-kicker" data-i18n="education.kicker">Education</p>
-            <h2 data-i18n="education.title">Technical foundations.</h2>
-          </div>
-        </div>
+        <div class="section-heading reveal"><span class="section-number">06</span><div><p class="section-kicker" data-i18n="education.kicker">Education</p><h2 data-i18n="education.title">Technical foundations.</h2></div></div>
         <div class="education-grid" id="educationGrid"></div>
       </div>
     </section>
 
     <section class="section contact-section" id="contact">
       <div class="container contact-card reveal">
-        <div>
-          <p class="section-kicker" data-i18n="contact.kicker">Contact</p>
-          <h2 data-i18n="contact.title">Let's talk cloud, architecture and infrastructure.</h2>
-          <p data-i18n="contact.text">LinkedIn is the easiest way to reach me. You can also explore the code behind this site on GitHub.</p>
-        </div>
-        <div class="contact-actions">
-          <a class="button button-primary" href="https://www.linkedin.com/in/gaston-alejandro-freire/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-          <a class="button button-secondary" href="https://github.com/gastonfreireGit" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-        </div>
+        <div><p class="section-kicker" data-i18n="contact.kicker">Contact</p><h2 data-i18n="contact.title">Let's talk cloud, infrastructure and migrations.</h2><p data-i18n="contact.text">LinkedIn is the easiest way to reach me.</p></div>
+        <div class="contact-actions"><a class="button button-primary" href="https://www.linkedin.com/in/gaston-alejandro-freire/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Gastón Freire</p>
-      <p class="footer-tech">AWS · Architecture · Terraform · Automation</p>
-    </div>
-  </footer>
-
-  <script src="content.js"></script>
-  <script src="script.js"></script>
+  <footer class="site-footer"><div class="container footer-inner"><p>© <span id="year"></span> Gastón Freire</p><p class="footer-tech">AWS · Migrations · Architecture · Infrastructure</p></div></footer>
+  <script src="content.js"></script><script src="script.js"></script>
 </body>
 </html>
